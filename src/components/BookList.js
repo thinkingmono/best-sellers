@@ -37,11 +37,11 @@ const BookList = () => {
 
     return (
         <>
+            <h1>Amazon Best Sellers</h1>
             <section className="booklist">
-                <h1>Amazon Best Sellers</h1>
                 {/* <EventExamples /> */}
                 {books.map((book, index) => {
-                    return <Book {...book} key={(book.title + book.author).toLowerCase()} getBook={getBook} index={index}/>
+                    return <Book {...book} key={(book.title + book.author).toLowerCase()} getBook={getBook} index={index} />
                     // return <Book key={(book.title+book.author).toLowerCase()} url={book.url} title={book.title} author={book.author} />
                 })}
             </section>
